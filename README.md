@@ -46,7 +46,7 @@ https://www.singulart.com/ko/
 
   ![Slack](https://img.shields.io/badge/-Slack-D91D57)  
   ![Git](https://img.shields.io/badge/-Git-black)  
-  ![Trello](https://img.shields.io/badge/-Trello-036AA7)
+  ![Trello](https://img.shields.io/badge/-Trello-036AA7) <br>
   ![Notion](https://img.shields.io/badge/-Notion-000000)  
 
 ---
