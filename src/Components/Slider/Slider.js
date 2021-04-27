@@ -59,7 +59,6 @@ const Wrapper = styled.div`
   ${({ theme }) => theme.flexSet('flex-start', 'center')}
   width: 800px;
   overflow: auto;
-
   &::-webkit-scrollbar {
     display: none;
   }
@@ -76,11 +75,9 @@ const DirectionBtn = styled.button`
   background-color: ${({ theme }) => theme.bgColor};
   box-shadow: rgba(100, 100, 111, 0.5) 0 0.5rem 2rem 0;
   font-size: 2rem;
-
   i {
     color: ${({ theme }) => theme.primaryColor};
   }
-
   .xi-angle-left-min {
     margin-left: -2px;
   }

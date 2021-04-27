@@ -9,7 +9,7 @@ const NewAtists = () => {
 
   useEffect(() => {
     // fetch('/data/NewAtistsData.json')
-    fetch(`${API}/arts/200`)
+    fetch(`${API}/artists/new`)
       .then(res => res.json())
       .then(data => {
         setArtData(data.artists);
@@ -28,13 +28,14 @@ const NewAtists = () => {
       <ArtInfo>
         {artData.map((artinfo, idx) => {
           const props = {
+            key: artinfo.id,
             hover: hover,
             colorHover: numIdx === idx,
             onMouseEnter: () => idxHandler(idx),
             onMouseLeave: () => idxHandler(-1),
           };
           return (
-            <ArtFragment>
+            <ArtFragment key={idx}>
               <Liner />
               <ImgBox imageUrl={artinfo.thumbnail_url}>
                 <Hover {...props} />
