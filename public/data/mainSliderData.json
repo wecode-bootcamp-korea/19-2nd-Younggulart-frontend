@@ -1,0 +1,19 @@
+{
+  "banners": [
+    {
+      "image_url": "https://images.unsplash.com/photo-1447758902204-48010b87c24d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "link_url": " #",
+      "text": " 영끌아트의 젊은 작가들을 소개합니다!"
+    },
+    {
+      "image_url": "https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80",
+      "link_url": " #",
+      "text": " 작가들의 독창적인 작품들을 만나보세요!"
+    },
+    {
+      "image_url": "https://media.istockphoto.com/photos/ongoing-auction-session-auctioneer-and-buyers-in-frame-picture-id1157214346?k=6&m=1157214346&s=612x612&w=0&h=rR1YxOzuSDnKpqIpTOM7uln6z4MCIsohgl7UbkOqSrQ=",
+      "link_url": " #",
+      "text": " 여러분의 안전을 위해 온라인 경매가 열립니다."
+    }
+  ]
+}

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Main from './Pages/Main/Main';
 import Bids from './Pages/Bids/Bids';
+// import Login from './Pages/Login/Login';
+// import Signup from './Pages/Signup/Signup';
 import Footer from './Components/Footer/Footer';
 import ProductList from './Pages/ProductList/ProductList';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
