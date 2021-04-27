@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer';
 const Routes = () => {
   return (
     <Router>
-      {/* <Nav /> */}
+      <Nav />
       <Switch>
         <Route exact path="/login" component={Login} />
         <Route exact path="/loading" component={Loading} />

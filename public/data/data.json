@@ -1,0 +1,249 @@
+{
+  "categories": [
+    [
+      {
+        "media_name": "회화",
+        "media_id": 1,
+        "media_image": "https://images.unsplash.com/photo-1577083287736-570a5c9a0864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=965&q=80",
+        "themes": [
+          {
+            "theme_id": 1,
+            "theme_name": "개념미술"
+          },
+          {
+            "theme_id": 2,
+            "theme_name": "거리예술"
+          },
+          {
+            "theme_id": 3,
+            "theme_name": "누드"
+          },
+          {
+            "theme_id": 4,
+            "theme_name": "대중문화"
+          },
+          {
+            "theme_id": 8,
+            "theme_name": "인물"
+          },
+          {
+            "theme_id": 9,
+            "theme_name": "일상"
+          },
+          {
+            "theme_id": 11,
+            "theme_name": "판타지"
+          }
+        ]
+      },
+      {
+        "media_name": "조각",
+        "media_id": 2,
+        "media_image": "https://images.unsplash.com/photo-1573085101347-72537f47cb35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80",
+        "themes": [
+          {
+            "theme_id": 15,
+            "theme_name": "상반신"
+          },
+          {
+            "theme_id": 16,
+            "theme_name": "독립 조각품"
+          },
+          {
+            "theme_id": 17,
+            "theme_name": "설치미술"
+          },
+          {
+            "theme_id": 18,
+            "theme_name": "오브제"
+          },
+          {
+            "theme_id": 19,
+            "theme_name": "야외 조각"
+          }
+        ]
+      },
+      {
+        "media_name": "사진",
+        "media_id": 3,
+        "media_image": "https://images.unsplash.com/photo-1584278773680-8d940a213dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1058&q=80",
+        "themes": [
+          {
+            "theme_id": 5,
+            "theme_name": "도시"
+          },
+          {
+            "theme_id": 6,
+            "theme_name": "동물"
+          },
+          {
+            "theme_id": 10,
+            "theme_name": "자연"
+          },
+          {
+            "theme_id": 13,
+            "theme_name": "여행"
+          },
+          {
+            "theme_id": 14,
+            "theme_name": "다큐멘터리"
+          },
+          {
+            "theme_id": 20,
+            "theme_name": "미장센"
+          },
+          {
+            "theme_id": 21,
+            "theme_name": "인물"
+          }
+        ]
+      },
+      {
+        "media_name": "소묘",
+        "media_id": 4,
+        "media_image": "https://images.unsplash.com/photo-1533158388470-9a56699990c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1293&q=80",
+        "themes": [
+          {
+            "theme_id": 12,
+            "theme_name": "종교"
+          },
+          {
+            "theme_id": 22,
+            "theme_name": "구상"
+          },
+          {
+            "theme_id": 23,
+            "theme_name": "인물"
+          },
+          {
+            "theme_id": 24,
+            "theme_name": "역사"
+          }
+        ]
+      },
+      {
+        "media_name": "인쇄",
+        "media_id": 5,
+        "media_image": "https://images.unsplash.com/photo-1580089056071-11f31b94fefe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80",
+        "themes": [
+          {
+            "theme_id": 7,
+            "theme_name": "디지털"
+          },
+          {
+            "theme_id": 25,
+            "theme_name": "해양"
+          },
+          {
+            "theme_id": 26,
+            "theme_name": "패션"
+          },
+          {
+            "theme_id": 27,
+            "theme_name": "정물"
+          },
+          {
+            "theme_id": 28,
+            "theme_name": "종교"
+          },
+          {
+            "theme_id": 29,
+            "theme_name": "일상"
+          },
+          {
+            "theme_id": 30,
+            "theme_name": "누드"
+          }
+        ]
+      },
+      {
+        "media_name": "기타매체",
+        "media_id": 6,
+        "media_image": "https://images.unsplash.com/photo-1600073692912-929b04dc1f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
+        "themes": []
+      }
+    ],
+    [
+      {
+        "artist_type_name": "화가",
+        "artist_type_id": 1,
+        "representitives": [
+          {
+            "id": 577,
+            "name": "류성훈",
+            "profile_image": "https://images.unsplash.com/photo-1587807870229-d2d0dc3b3fef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          },
+          {
+            "id": 578,
+            "name": "김은정",
+            "profile_image": "https://images.unsplash.com/photo-1530432537673-edb4243b7038?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1036&q=80"
+          }
+        ]
+      },
+      {
+        "artist_type_name": "소묘화가",
+        "artist_type_id": 2,
+        "representitives": [
+          {
+            "id": 715,
+            "name": "이준혁",
+            "profile_image": "https://images.unsplash.com/photo-1616839114420-3c8847765d99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          },
+          {
+            "id": 788,
+            "name": "이성수",
+            "profile_image": "https://images.unsplash.com/photo-1589391799051-a022d3ab9ead?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          }
+        ]
+      },
+      {
+        "artist_type_name": "사진가",
+        "artist_type_id": 3,
+        "representitives": [
+          {
+            "id": 708,
+            "name": "박은주",
+            "profile_image": "https://images.unsplash.com/photo-1536005233760-9894e2a60c3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
+          },
+          {
+            "id": 784,
+            "name": "이예은",
+            "profile_image": "https://images.unsplash.com/photo-1603031663141-10e7bfee982d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+          }
+        ]
+      },
+      {
+        "artist_type_name": "조각가",
+        "artist_type_id": 4,
+        "representitives": [
+          {
+            "id": 611,
+            "name": "박영순",
+            "profile_image": "https://images.unsplash.com/photo-1551180452-aea351b23949?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
+          },
+          {
+            "id": 672,
+            "name": "우영식",
+            "profile_image": "https://images.unsplash.com/photo-1597310502681-0e46d49df0da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80"
+          }
+        ]
+      },
+      {
+        "artist_type_name": "섬유예술가",
+        "artist_type_id": 5,
+        "representitives": [
+          {
+            "id": 720,
+            "name": "안성호",
+            "profile_image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80"
+          },
+          {
+            "id": 843,
+            "name": "김민재",
+            "profile_image": "https://images.unsplash.com/photo-1585923491671-0ced430efe9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80"
+          }
+        ]
+      }
+    ]
+  ]
+}
