@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Main from './Pages/Main/Main';
 import Login from './Pages/Login/Login';
+import Loading from './Components/Loading/Loading';
 import Signup from './Pages/Signup/Signup';
 import Footer from './Components/Footer/Footer';
 
@@ -12,6 +13,7 @@ const Routes = () => {
       {/* <Nav /> */}
       <Switch>
         <Route exact path="/login" component={Login} />
+        <Route exact path="/loading" component={Loading} />
         {/* <Route exact path="/" component={Main} /> */}
         {/* <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Signup} /> */}
