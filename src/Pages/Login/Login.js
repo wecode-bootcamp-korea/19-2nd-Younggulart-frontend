@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { API, KAKAO } from '../../config';
 import Modal from '../../Components/Modal/Modal';
@@ -9,12 +8,8 @@ const Login = () => {
   const history = useHistory();
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
+  const handleModal = status => {
+    setModalOpen(status);
   };
 
   const kakaoLogin = () => {
@@ -50,13 +45,27 @@ const Login = () => {
 
   return (
     <>
-      <button onClick={openModal}>Login</button>
-      <Modal open={modalOpen} close={closeModal} header="소셜 로그인">
-        <KakaoBtn onClick={kakaoLogin} src={KAKAO.loginBtn}></KakaoBtn>
-        <FindPassword href={KAKAO.findPassword} target="_blank">
-          비밀번호를 잊으셨나요?
-        </FindPassword>
-      </Modal>
+      <button
+        onClick={() => {
+          handleModal(true);
+        }}
+      >
+        Login
+      </button>
+      {modalOpen > 0 && (
+        <Modal
+          open={modalOpen}
+          close={() => {
+            handleModal(false);
+          }}
+          header="소셜 로그인"
+        >
+          <KakaoBtn onClick={kakaoLogin} src={KAKAO.loginBtn}></KakaoBtn>
+          <FindPassword href={KAKAO.findPassword} target="_blank">
+            비밀번호를 잊으셨나요?
+          </FindPassword>
+        </Modal>
+      )}
     </>
   );
 };
@@ -70,13 +79,13 @@ const KakaoBtn = styled.img`
 const FindPassword = styled.a`
   display: block;
   padding: 2rem 0 1rem 0;
-  font-size: ${props => props.theme.fontSizeSmall};
-  font-weight: ${props => props.theme.fontWeightBold};
-  color: ${props => props.theme.black};
+  font-size: ${({ theme }) => theme.fontSizeSmall};
+  font-weight: ${({ theme }) => theme.fontWeightBold};
+  color: ${({ theme }) => theme.black};
   text-align: center;
 
   &:hover {
-    color: ${props => props.theme.primaryColor};
+    color: ${({ theme }) => theme.primaryColor};
     cursor: pointer;
   }
 `;
