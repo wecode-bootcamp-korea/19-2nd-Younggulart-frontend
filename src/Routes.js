@@ -24,7 +24,7 @@ const Routes = () => {
         <Route exact path="/order/complete" component={OrderComplete} />
         <Route exact path="/live" component={Live} /> */}
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 };
