@@ -47,14 +47,14 @@ const modalBgShow = keyframes`
 `;
 
 const ModalWrap = styled.div`
-  ${({ theme }) => theme.flexCenter};
+  ${({ theme }) => theme.flexSet('center', 'center')}
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   padding-top: 10rem;
-  z-index: 10;
+  z-index: 200;
   background-color: rgba(0, 0, 0, 0.5);
   animation: ${modalBgShow} 0.3s;
 `;
