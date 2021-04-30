@@ -47,7 +47,7 @@ const modalBgShow = keyframes`
 `;
 
 const ModalWrap = styled.div`
-  ${props => props.theme.flexCenter};
+  ${({ theme }) => theme.flexCenter};
   position: fixed;
   top: 0;
   right: 0;
@@ -92,7 +92,7 @@ const ModalHeader = styled.header`
   i {
     padding-bottom: 2rem;
     font-size: 4rem;
-    color: ${props => props.theme.primaryColor};
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;
 
