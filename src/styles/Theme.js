@@ -1,17 +1,9 @@
 import { css } from 'styled-components';
 
-export const flexCenter = css`
+export const flexSet = (justifyContent, alignItems) => css`
   display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-export const flexJustCenter = css`
-  display: flex;
-  justify-content: center;
-`;
-export const flexAlignCenter = css`
-  display: flex;
-  align-items: center;
+  justify-content: ${justifyContent};
+  align-items: ${alignItems};
 `;
 
 const Theme = {
@@ -24,9 +16,7 @@ const Theme = {
   gray: '#474747',
   black: '#333333',
   bgColor: '#F8F8F8',
-  flexCenter,
-  flexJustCenter,
-  flexAlignCenter,
+  flexSet,
 };
 
 export default Theme;
