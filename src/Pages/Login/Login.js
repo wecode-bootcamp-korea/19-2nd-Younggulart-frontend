@@ -5,6 +5,7 @@ import Modal from '../../Components/Modal/Modal';
 import styled from 'styled-components';
 
 const Login = () => {
+  const { Kakao } = window;
   const history = useHistory();
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -13,8 +14,6 @@ const Login = () => {
   };
 
   const kakaoLogin = () => {
-    const { Kakao } = window;
-
     Kakao.Auth.login({
       success: function (res) {
         setModalOpen(false);
@@ -27,7 +26,6 @@ const Login = () => {
         })
           .then(res => res.json())
           .then(res => {
-            // console.log(res.ACCESS_TOKEN);
             if (res.ACCESS_TOKEN) {
               localStorage.setItem('access_token', res.ACCESS_TOKEN);
               alert('로그인 성공!');
@@ -41,6 +39,19 @@ const Login = () => {
         console.log('kakao login 오류', err);
       },
     });
+  };
+
+  const kakaoOnClick = () => {
+    Kakao.Auth.getStatusInfo(res => {
+      res.status === 'connected' ? history.push('/') : kakaoLogin();
+    });
+  };
+
+  const kakaoLogout = () => {
+    Kakao.Auth.logout(() => {
+      console.log('Kakao logout');
+    });
+    localStorage.clear();
   };
 
   return (
@@ -60,11 +71,14 @@ const Login = () => {
           }}
           header="소셜 로그인"
         >
-          <KakaoBtn onClick={kakaoLogin} src={KAKAO.loginBtn}></KakaoBtn>
+          <KakaoBtn onClick={kakaoOnClick} src={KAKAO.loginBtn}></KakaoBtn>
           <FindPassword href={KAKAO.findPassword} target="_blank">
             비밀번호를 잊으셨나요?
           </FindPassword>
         </Modal>
+      )}
+      {localStorage.getItem('access_token') && (
+        <button onClick={kakaoLogout}>Logout</button>
       )}
     </>
   );
