@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const Loading = () => {
+const Loading = ({ forwardRef }) => {
   return (
-    <LoadingWrap>
+    <LoadingWrap ref={forwardRef}>
       <LoadingBar />
     </LoadingWrap>
   );
@@ -18,13 +18,13 @@ const loadingSpin = keyframes`
 `;
 
 const LoadingWrap = styled.div`
-  ${({ theme }) => theme.flexCenter};
-  min-height: 100vh;
+  ${({ theme }) => theme.flexSet('center', 'center')}
 `;
 
 const LoadingBar = styled.div`
   width: 3rem;
   height: 3rem;
+  margin: 3rem 0;
   pointer-events: none;
   border: 0.3rem solid transparent;
   border-color: ${({ theme }) => theme.bgColor};
