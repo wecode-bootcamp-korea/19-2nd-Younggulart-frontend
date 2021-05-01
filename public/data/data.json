@@ -1,249 +1,315 @@
 {
-  "categories": [
-    [
-      {
-        "media_name": "회화",
-        "media_id": 1,
-        "media_image": "https://images.unsplash.com/photo-1577083287736-570a5c9a0864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=965&q=80",
-        "themes": [
-          {
-            "theme_id": 1,
-            "theme_name": "개념미술"
-          },
-          {
-            "theme_id": 2,
-            "theme_name": "거리예술"
-          },
-          {
-            "theme_id": 3,
-            "theme_name": "누드"
-          },
-          {
-            "theme_id": 4,
-            "theme_name": "대중문화"
-          },
-          {
-            "theme_id": 8,
-            "theme_name": "인물"
-          },
-          {
-            "theme_id": 9,
-            "theme_name": "일상"
-          },
-          {
-            "theme_id": 11,
-            "theme_name": "판타지"
-          }
-        ]
-      },
-      {
-        "media_name": "조각",
-        "media_id": 2,
-        "media_image": "https://images.unsplash.com/photo-1573085101347-72537f47cb35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80",
-        "themes": [
-          {
-            "theme_id": 15,
-            "theme_name": "상반신"
-          },
-          {
-            "theme_id": 16,
-            "theme_name": "독립 조각품"
-          },
-          {
-            "theme_id": 17,
-            "theme_name": "설치미술"
-          },
-          {
-            "theme_id": 18,
-            "theme_name": "오브제"
-          },
-          {
-            "theme_id": 19,
-            "theme_name": "야외 조각"
-          }
-        ]
-      },
-      {
-        "media_name": "사진",
-        "media_id": 3,
-        "media_image": "https://images.unsplash.com/photo-1584278773680-8d940a213dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1058&q=80",
-        "themes": [
-          {
-            "theme_id": 5,
-            "theme_name": "도시"
-          },
-          {
-            "theme_id": 6,
-            "theme_name": "동물"
-          },
-          {
-            "theme_id": 10,
-            "theme_name": "자연"
-          },
-          {
-            "theme_id": 13,
-            "theme_name": "여행"
-          },
-          {
-            "theme_id": 14,
-            "theme_name": "다큐멘터리"
-          },
-          {
-            "theme_id": 20,
-            "theme_name": "미장센"
-          },
-          {
-            "theme_id": 21,
-            "theme_name": "인물"
-          }
-        ]
-      },
-      {
-        "media_name": "소묘",
-        "media_id": 4,
-        "media_image": "https://images.unsplash.com/photo-1533158388470-9a56699990c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1293&q=80",
-        "themes": [
-          {
-            "theme_id": 12,
-            "theme_name": "종교"
-          },
-          {
-            "theme_id": 22,
-            "theme_name": "구상"
-          },
-          {
-            "theme_id": 23,
-            "theme_name": "인물"
-          },
-          {
-            "theme_id": 24,
-            "theme_name": "역사"
-          }
-        ]
-      },
-      {
-        "media_name": "인쇄",
-        "media_id": 5,
-        "media_image": "https://images.unsplash.com/photo-1580089056071-11f31b94fefe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80",
-        "themes": [
-          {
-            "theme_id": 7,
-            "theme_name": "디지털"
-          },
-          {
-            "theme_id": 25,
-            "theme_name": "해양"
-          },
-          {
-            "theme_id": 26,
-            "theme_name": "패션"
-          },
-          {
-            "theme_id": 27,
-            "theme_name": "정물"
-          },
-          {
-            "theme_id": 28,
-            "theme_name": "종교"
-          },
-          {
-            "theme_id": 29,
-            "theme_name": "일상"
-          },
-          {
-            "theme_id": 30,
-            "theme_name": "누드"
-          }
-        ]
-      },
-      {
-        "media_name": "기타매체",
-        "media_id": 6,
-        "media_image": "https://images.unsplash.com/photo-1600073692912-929b04dc1f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-        "themes": []
-      }
-    ],
-    [
-      {
-        "artist_type_name": "화가",
-        "artist_type_id": 1,
-        "representitives": [
-          {
-            "id": 577,
-            "name": "류성훈",
-            "profile_image": "https://images.unsplash.com/photo-1587807870229-d2d0dc3b3fef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          },
-          {
-            "id": 578,
-            "name": "김은정",
-            "profile_image": "https://images.unsplash.com/photo-1530432537673-edb4243b7038?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1036&q=80"
-          }
-        ]
-      },
-      {
-        "artist_type_name": "소묘화가",
-        "artist_type_id": 2,
-        "representitives": [
-          {
-            "id": 715,
-            "name": "이준혁",
-            "profile_image": "https://images.unsplash.com/photo-1616839114420-3c8847765d99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-          },
-          {
-            "id": 788,
-            "name": "이성수",
-            "profile_image": "https://images.unsplash.com/photo-1589391799051-a022d3ab9ead?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-          }
-        ]
-      },
-      {
-        "artist_type_name": "사진가",
-        "artist_type_id": 3,
-        "representitives": [
-          {
-            "id": 708,
-            "name": "박은주",
-            "profile_image": "https://images.unsplash.com/photo-1536005233760-9894e2a60c3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
-          },
-          {
-            "id": 784,
-            "name": "이예은",
-            "profile_image": "https://images.unsplash.com/photo-1603031663141-10e7bfee982d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
-          }
-        ]
-      },
-      {
-        "artist_type_name": "조각가",
-        "artist_type_id": 4,
-        "representitives": [
-          {
-            "id": 611,
-            "name": "박영순",
-            "profile_image": "https://images.unsplash.com/photo-1551180452-aea351b23949?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
-          },
-          {
-            "id": 672,
-            "name": "우영식",
-            "profile_image": "https://images.unsplash.com/photo-1597310502681-0e46d49df0da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1234&q=80"
-          }
-        ]
-      },
-      {
-        "artist_type_name": "섬유예술가",
-        "artist_type_id": 5,
-        "representitives": [
-          {
-            "id": 720,
-            "name": "안성호",
-            "profile_image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80"
-          },
-          {
-            "id": 843,
-            "name": "김민재",
-            "profile_image": "https://images.unsplash.com/photo-1585923491671-0ced430efe9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1301&q=80"
-          }
-        ]
-      }
-    ]
+  "artists": [
+    {
+      "id": 782,
+      "name": "오지원",
+      "profile_image_url": "https://images.unsplash.com/photo-1486413869840-a99ac0a4c031?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1271&q=80",
+      "arts": [
+        {
+          "id": 25,
+          "thumbnail_url": "Unde dolores autem velit adipisci.",
+          "price": "5326385.00",
+          "height": "57.00",
+          "width": "186.00",
+          "material": "목탄",
+          "paper": "캔버스"
+        },
+        {
+          "id": 134,
+          "thumbnail_url": "Quibusdam ab exercitationem quibusdam nemo delectus vero.",
+          "price": "13820729.00",
+          "height": "165.00",
+          "width": "158.00",
+          "material": "목탄",
+          "paper": "종이"
+        },
+        {
+          "id": 469,
+          "thumbnail_url": "Commodi itaque consequuntur iste iusto.",
+          "price": "7984346.00",
+          "height": "113.00",
+          "width": "80.00",
+          "material": "디지털",
+          "paper": "캔버스"
+        },
+        {
+          "id": 962,
+          "thumbnail_url": "Corrupti omnis neque deserunt quidem totam.",
+          "price": "3883912.00",
+          "height": "94.00",
+          "width": "165.00",
+          "material": "디지털",
+          "paper": "글라스"
+        },
+        {
+          "id": 1247,
+          "thumbnail_url": "Aut velit eaque hic velit.",
+          "price": "9323494.00",
+          "height": "81.00",
+          "width": "81.00",
+          "material": "유채",
+          "paper": "합성판"
+        },
+        {
+          "id": 1551,
+          "thumbnail_url": "Qui architecto assumenda perferendis quae suscipit.",
+          "price": "14195406.00",
+          "height": "120.00",
+          "width": "92.00",
+          "material": "색연필",
+          "paper": "골판지"
+        },
+        {
+          "id": 2713,
+          "thumbnail_url": "Deserunt nam ex recusandae dolore blanditiis.",
+          "price": "13286383.00",
+          "height": "171.00",
+          "width": "52.00",
+          "material": "디지털",
+          "paper": "골판지"
+        },
+        {
+          "id": 2789,
+          "thumbnail_url": "Fugiat aliquid vel fuga magni.",
+          "price": "12596550.00",
+          "height": "167.00",
+          "width": "143.00",
+          "material": "연필",
+          "paper": "종이"
+        },
+        {
+          "id": 2929,
+          "name": "Numquam veniam omnis ipsam voluptatem.",
+          "price": "9753992.00",
+          "height": "180.00",
+          "width": "174.00",
+          "material": "스프레이",
+          "paper": "글라스"
+        },
+        {
+          "id": 2991,
+          "name": "Facere eius adipisci.",
+          "price": "4539834.00",
+          "height": "83.00",
+          "width": "113.00",
+          "material": "색연필",
+          "paper": "종이"
+        },
+        {
+          "id": 3004,
+          "name": "Veniam ipsum occaecati totam distinctio.",
+          "price": "13151002.00",
+          "height": "173.00",
+          "width": "164.00",
+          "material": "목탄",
+          "paper": "합성판"
+        },
+        {
+          "id": 3102,
+          "name": "Non accusantium velit modi voluptates eum.",
+          "price": "14437022.00",
+          "height": "96.00",
+          "width": "168.00",
+          "material": "스프레이",
+          "paper": "골판지"
+        },
+        {
+          "id": 3314,
+          "name": "Cum officiis tempora doloribus dolor sit dolores exercitationem.",
+          "price": "12128919.00",
+          "height": "110.00",
+          "width": "113.00",
+          "material": "스프레이",
+          "paper": "글라스"
+        },
+        {
+          "id": 3552,
+          "name": "Repellat natus tempore expedita.",
+          "price": "13106418.00",
+          "height": "161.00",
+          "width": "199.00",
+          "material": "색종이",
+          "paper": "골판지"
+        },
+        {
+          "id": 3610,
+          "name": "Debitis illo dignissimos consectetur aspernatur laboriosam.",
+          "price": "3122100.00",
+          "height": "178.00",
+          "width": "82.00",
+          "material": "스프레이",
+          "paper": "종이"
+        },
+        {
+          "id": 3742,
+          "name": "Accusamus unde officiis dolores enim repudiandae.",
+          "price": "10929050.00",
+          "height": "139.00",
+          "width": "162.00",
+          "material": "연필",
+          "paper": "골판지"
+        },
+        {
+          "id": 3957,
+          "name": "Natus nam labore dolore adipisci cum dignissimos.",
+          "price": "12173038.00",
+          "height": "192.00",
+          "width": "64.00",
+          "material": "색종이",
+          "paper": "골판지"
+        }
+      ]
+    },
+    {
+      "id": 808,
+      "name": "정미숙",
+      "profile_image_url": "https://images.unsplash.com/photo-1541130292430-a832637ddc0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1027&q=80",
+      "arts": [
+        {
+          "id": 26,
+          "name": "Id debitis repudiandae.",
+          "price": "10573260.00",
+          "height": "151.00",
+          "width": "175.00",
+          "material": "색종이",
+          "paper": "글라스"
+        },
+        {
+          "id": 93,
+          "name": "Odit officia nihil eveniet aspernatur natus dolores quis.",
+          "price": "4634580.00",
+          "height": "77.00",
+          "width": "183.00",
+          "material": "디지털",
+          "paper": "캔버스"
+        },
+        {
+          "id": 610,
+          "name": "Odio consectetur cumque aspernatur.",
+          "price": "11267301.00",
+          "height": "65.00",
+          "width": "124.00",
+          "material": "색연필",
+          "paper": "캔버스"
+        },
+        {
+          "id": 755,
+          "name": "Fuga aliquam fuga illo debitis officiis.",
+          "price": "11326968.00",
+          "height": "182.00",
+          "width": "133.00",
+          "material": "디지털",
+          "paper": "종이"
+        },
+        {
+          "id": 1242,
+          "name": "Inventore pariatur magnam fugit.",
+          "price": "7727026.00",
+          "height": "153.00",
+          "width": "180.00",
+          "material": "유채",
+          "paper": "글라스"
+        },
+        {
+          "id": 1347,
+          "name": "Cumque modi nesciunt eos enim.",
+          "price": "11268865.00",
+          "height": "58.00",
+          "width": "131.00",
+          "material": "유채",
+          "paper": "글라스"
+        },
+        {
+          "id": 1434,
+          "name": "Inventore ex accusantium blanditiis.",
+          "price": "9412177.00",
+          "height": "140.00",
+          "width": "116.00",
+          "material": "디지털",
+          "paper": "글라스"
+        },
+        {
+          "id": 2000,
+          "name": "Enim et exercitationem earum.",
+          "price": "12895168.00",
+          "height": "134.00",
+          "width": "144.00",
+          "material": "디지털",
+          "paper": "종이"
+        },
+        {
+          "id": 2338,
+          "name": "Sunt nihil autem quis corrupti nesciunt.",
+          "price": "14801527.00",
+          "height": "162.00",
+          "width": "172.00",
+          "material": "스프레이",
+          "paper": "합성판"
+        },
+        {
+          "id": 2460,
+          "name": "Laboriosam quas numquam.",
+          "price": "14688685.00",
+          "height": "116.00",
+          "width": "176.00",
+          "material": "필름",
+          "paper": "골판지"
+        },
+        {
+          "id": 2620,
+          "name": "Possimus mollitia eos facere.",
+          "price": "12430037.00",
+          "height": "186.00",
+          "width": "174.00",
+          "material": "색종이",
+          "paper": "캔버스"
+        },
+        {
+          "id": 3278,
+          "name": "Voluptates laborum repellat omnis.",
+          "price": "8673136.00",
+          "height": "73.00",
+          "width": "169.00",
+          "material": "색종이",
+          "paper": "글라스"
+        },
+        {
+          "id": 3605,
+          "name": "Iste eaque accusamus.",
+          "price": "5572201.00",
+          "height": "83.00",
+          "width": "123.00",
+          "material": "필름",
+          "paper": "글라스"
+        },
+        {
+          "id": 3952,
+          "name": "In vero magnam perspiciatis.",
+          "price": "3661705.00",
+          "height": "64.00",
+          "width": "59.00",
+          "material": "목탄",
+          "paper": "종이"
+        },
+        {
+          "id": 3967,
+          "name": "Porro alias pariatur odio omnis nam.",
+          "price": "3541517.00",
+          "height": "95.00",
+          "width": "102.00",
+          "material": "디지털",
+          "paper": "캔버스"
+        },
+        {
+          "id": 3991,
+          "name": "Quisquam soluta assumenda quod voluptatem.",
+          "price": "9869142.00",
+          "height": "172.00",
+          "width": "101.00",
+          "material": "스프레이",
+          "paper": "글라스"
+        }
+      ]
+    }
   ]
 }
