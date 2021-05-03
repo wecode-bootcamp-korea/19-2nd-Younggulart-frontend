@@ -13,16 +13,13 @@ const Routes = () => {
     <Router>
       <Nav />
       <Switch>
-        <Route exact path="/login" component={Login} />
+        {/* <Route exact path="/nav" component={Nav} /> */}
         <Route exact path="/bids" component={Bids} />
         {/* <Route exact path="/" component={Main} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/productList" component={ProductList} />
         <Route exact path="/productList/:id" component={ProductDetail} />
-        <Route exact path="/cart" component={Cart} />
-        <Route exact path="/order" component={Order} />
-        <Route exact path="/order/complete" component={OrderComplete} />
-        <Route exact path="/live" component={Live} /> */}
+        <Route exact path="/cart" component={Cart} /> */}
       </Switch>
       {/* <Footer /> */}
     </Router>

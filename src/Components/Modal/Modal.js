@@ -53,6 +53,7 @@ const ModalWrap = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
+  padding-top: 10rem;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   animation: ${modalBgShow} 0.3s;

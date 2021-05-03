@@ -8,6 +8,7 @@ const Login = () => {
   const { Kakao } = window;
   const history = useHistory();
   const [modalOpen, setModalOpen] = useState(false);
+  const [isLogined, setIsLogined] = useState(false);
 
   const handleModal = status => {
     setModalOpen(status);
@@ -17,6 +18,7 @@ const Login = () => {
     Kakao.Auth.login({
       success: function (res) {
         setModalOpen(false);
+        localStorage.setItem('kakao_token', res.access_token);
 
         fetch(`${API}/users/login/kakao`, {
           method: 'POST',
@@ -30,6 +32,7 @@ const Login = () => {
               localStorage.setItem('access_token', res.ACCESS_TOKEN);
               alert('로그인 성공!');
               history.push('/');
+              setIsLogined(true);
             } else {
               alert('로그인 실패!');
             }
@@ -52,17 +55,24 @@ const Login = () => {
       console.log('Kakao logout');
     });
     localStorage.clear();
+    setIsLogined(false);
   };
 
   return (
     <>
-      <button
-        onClick={() => {
-          handleModal(true);
-        }}
-      >
-        Login
-      </button>
+      {isLogined ? (
+        <Button onClick={kakaoLogout}>
+          <i className="xi-log-out" />
+        </Button>
+      ) : (
+        <Button
+          onClick={() => {
+            handleModal(true);
+          }}
+        >
+          <i className="xi-profile-o" />
+        </Button>
+      )}
       {modalOpen > 0 && (
         <Modal
           open={modalOpen}
@@ -77,12 +87,15 @@ const Login = () => {
           </FindPassword>
         </Modal>
       )}
-      {localStorage.getItem('access_token') && (
-        <button onClick={kakaoLogout}>Logout</button>
-      )}
     </>
   );
 };
+
+const Button = styled.button`
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+`;
 
 const KakaoBtn = styled.img`
   width: 70%;

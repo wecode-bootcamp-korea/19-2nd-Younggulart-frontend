@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Menu from './Menu/Menu';
+import Login from '../../Pages/Login/Login';
 
 const Nav = props => {
   const [menuState, setMenuState] = useState(false);
@@ -38,7 +39,7 @@ const Nav = props => {
         <Logo>
           <img
             src="https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/logos/logo-colors-line-black-bg.178bc952.svg"
-            alt=""
+            alt="logoImage"
           />
         </Logo>
         <MainNav>
@@ -71,9 +72,9 @@ const Nav = props => {
               placeholder="    여기에 검색어를 입력해주세요."
             />
           )}
-          <li>
-            <i className="xi-profile-o"></i>
-          </li>
+          <LoginLi>
+            <Login />
+          </LoginLi>
           <li>
             <i className="xi-heart-o"></i>
           </li>
@@ -87,16 +88,16 @@ const Nav = props => {
 };
 
 const MenuPopUp = styled.div`
-  display: flex;
+  ${({ theme }) => theme.flexSet('center', 'center')}
   position: absolute;
-  justify-content: space-around;
-  align-items: center;
-  left: 500px;
+  flex-direction: column;
+  left: 10rem;
   width: 1000px;
   height: 400px;
   color: black;
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${({ theme }) => theme.bgColor};
   text-align: left;
+
   li {
     padding: 2px;
   }
@@ -108,13 +109,13 @@ const Navbar = styled.section`
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 200px;
+  height: 20vh;
   background: black;
   cursor: pointer;
 `;
 
 const HeaderInfo = styled.section`
-  padding-top: 16px;
+  padding-top: 1rem;
   height: 30px;
   background-color: black;
   color: white;
@@ -128,42 +129,46 @@ const Logo = styled.span`
 `;
 
 const MainNav = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${({ theme }) => theme.flexSet('center', 'center')}
   min-width: 500px;
   width: 1250px;
   color: white;
   text-align: center;
   font-weight: 700;
+
   li {
-    padding-left: 40px;
-    font-size: 30px;
+    padding-left: 2.5rem;
+    font-size: 1.5rem;
   }
 `;
 
 const UserTap = styled.ul`
-  display: flex;
+  ${({ theme }) => theme.flexSet('center', 'center')}
   margin-left: 90px;
-  justify-content: center;
-  align-items: center;
   color: white;
-  font-size: 45px;
+  font-size: 2rem;
+
   li {
-    padding-left: 20px;
+    padding-left: 1rem;
   }
+
   .languages {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
+`;
+
+const LoginLi = styled.li`
+  color: ${({ theme }) => theme.black};
 `;
 
 const Search = styled.li`
   display: flex;
 `;
+
 const Input = styled.input`
   width: 300px;
-  height: 45px;
-  border-radius: 25px;
+  height: 3rem;
+  border-radius: 1.5rem;
   background-color: #343434;
   color: white;
 `;
