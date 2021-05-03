@@ -33,7 +33,7 @@ const Nav = props => {
   }, []);
 
   return (
-    <>
+    <NavbarFix>
       <HeaderInfo>WORLDWIDE SHIPPING - FREE RETURNS</HeaderInfo>
       <Navbar>
         <Logo>
@@ -83,9 +83,15 @@ const Nav = props => {
           </li>
         </UserTap>
       </Navbar>
-    </>
+    </NavbarFix>
   );
 };
+
+const NavbarFix = styled.div`
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+`;
 
 const MenuPopUp = styled.div`
   ${({ theme }) => theme.flexSet('center', 'center')}
@@ -123,9 +129,8 @@ const HeaderInfo = styled.section`
 `;
 
 const Logo = styled.span`
-  margin: 70px 0 0 70px;
-  width: 370px;
-  height: 100px;
+  margin: 20px 0 0 70px;
+  width: 360px;
 `;
 
 const MainNav = styled.ul`
