@@ -81,7 +81,7 @@ const Bids = () => {
 export default Bids;
 
 const Wrapper = styled.div`
-  padding: 3rem 0 10rem 0;
+  padding: 13rem 0 10rem 0;
   background: url(${BIDS_BACKGROUND}) repeat;
   height: ${({ isFirstLoading }) => isFirstLoading && '100vh'};
   background-size: auto;
