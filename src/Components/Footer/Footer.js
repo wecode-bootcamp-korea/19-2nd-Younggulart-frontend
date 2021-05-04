@@ -11,24 +11,24 @@ const Footer = props => {
         />
         <Information>
           <InfoTitle>고객센터</InfoTitle>
-          <InfoList>
+          {/* <InfoList>
             {INFO.map((data, idx) => {
               return <li key={idx}>{data.name}</li>;
             })}
-          </InfoList>
+          </InfoList> */}
         </Information>
         <Information>
           <InfoTitle>회사소개</InfoTitle>
-          <InfoList>
+          {/* <InfoList>
             {CP.map((elm, index) => {
               return <li key={index}>{elm}</li>;
             })}
-          </InfoList>
+          </InfoList> */}
         </Information>
         <Information>
           <InfoTitle>작가신가요?</InfoTitle>
-          <InfoList>제휴 작가 등록 신청</InfoList>
-          <InfoList>내 계정 (younggleart작가 전용)</InfoList>
+          {/* <InfoList>제휴 작가 등록 신청</InfoList>
+          <InfoList>내 계정 (younggleart작가 전용)</InfoList> */}
         </Information>
       </FooterManu>
       <Baseline>

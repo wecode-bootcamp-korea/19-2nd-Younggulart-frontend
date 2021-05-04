@@ -33,8 +33,12 @@ const Bids = () => {
           setBidsLists(bidsData.auctions.slice(0, itemCount));
         });
       setIsLoading(false);
-    }, 300);
+    }, 500);
   };
+
+  useEffect(() => {
+    return () => setIsLoading(false);
+  }, []);
 
   useEffect(() => {
     fetchBidsLists();
@@ -81,7 +85,7 @@ const Bids = () => {
 export default Bids;
 
 const Wrapper = styled.div`
-  padding: 13rem 0 10rem 0;
+  padding: 15rem 0 10rem 0;
   background: url(${BIDS_BACKGROUND}) repeat;
   height: ${({ isFirstLoading }) => isFirstLoading && '100vh'};
   background-size: auto;

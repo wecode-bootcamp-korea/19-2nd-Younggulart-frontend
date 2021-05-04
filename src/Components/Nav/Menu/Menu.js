@@ -2,19 +2,15 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Menu = props => {
-  // console.log(props.dataState[0]);
   const [change, setchange] = useState(false);
   const [sub, setSub] = useState([]);
   const [img, setImg] = useState([]);
 
   const ishovered = index => {
     setchange(!change);
-    // console.log(props.dataState[index]);
     setSub(props.dataState[index].themes);
     setImg(props.dataState[index]);
   };
-
-  const subMenu = index => {};
 
   return (
     <Menus>
