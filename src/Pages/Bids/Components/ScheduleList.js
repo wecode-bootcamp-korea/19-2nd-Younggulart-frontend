@@ -25,7 +25,7 @@ const ScheduleList = ({ bidsList, id }) => {
 
   useEffect(() => {
     if (isShow) {
-      window.scrollTo(0, mapWrap.current.scrollHeight * (id * 1.5));
+      window.scrollTo(0, mapWrap.current.scrollHeight * (id * 2));
     }
   }, [isShow]);
 
