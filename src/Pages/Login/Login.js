@@ -18,7 +18,7 @@ const Login = () => {
     Kakao.Auth.login({
       success: function (res) {
         setModalOpen(false);
-        localStorage.setItem('kakao_token', res.access_token);
+        localStorage.setItem('access_token', res.access_token);
 
         fetch(`${API}/users/login/kakao`, {
           method: 'POST',
@@ -29,7 +29,6 @@ const Login = () => {
           .then(res => res.json())
           .then(res => {
             if (res.ACCESS_TOKEN) {
-              localStorage.setItem('access_token', res.ACCESS_TOKEN);
               alert('로그인 성공!');
               history.push('/');
               setIsLogined(true);
@@ -73,7 +72,7 @@ const Login = () => {
           <i className="xi-profile-o" />
         </Button>
       )}
-      {modalOpen > 0 && (
+      {modalOpen && (
         <Modal
           open={modalOpen}
           close={() => {
