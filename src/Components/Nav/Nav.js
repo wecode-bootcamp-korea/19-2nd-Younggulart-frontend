@@ -33,7 +33,7 @@ const Nav = props => {
       <Navbar>
         <Logo>
           <Link to="/">
-            <img src={LOGO} alt="logoImage" />
+            <img src={LOGO.imageText} alt="logoImage" />
           </Link>
         </Logo>
         <MainNav>
