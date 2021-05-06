@@ -1,4 +1,4 @@
-export const API = 'http://10.58.1.129:8000';
+export const API = 'http://3.36.228.27:8080';
 export const BIDS_API = `${API}/auctions?date=`;
 
 export const KAKAO = {

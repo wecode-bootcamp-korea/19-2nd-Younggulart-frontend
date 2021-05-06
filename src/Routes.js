@@ -5,6 +5,7 @@ import Main from './Pages/Main/Main';
 import Bids from './Pages/Bids/Bids';
 import Footer from './Components/Footer/Footer';
 import ProductList from './Pages/ProductList/ProductList';
+import ProductDetail from './Pages/';
 
 const Routes = () => {
   return (
@@ -12,11 +13,10 @@ const Routes = () => {
       <Switch>
         <Nav />
         <Route exact path="/bids" component={Bids} />
-        <Route exact path="/timer" component={Timer} />
-        {/* <Route exact path="/" component={Main} />
-        <Route exact path="/signup" component={Signup} />*/}
-        {/* <Route exact path="/productList" component={ProductList} /> */}
+        <Route exact path="/productlist" component={ProductList} />
+        <Route exact path="/" component={Main} />
         <Route exact path="/productList/:id" component={ProductDetail} />
+        {/* <Route exact path="/signup" component={Signup} /> */}
         {/* <Route exact path="/cart" component={Cart} /> */}
       </Switch>
       <Footer />

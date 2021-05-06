@@ -12,7 +12,7 @@ const ProductList = props => {
   const [artistData, setArtistData] = useState([]);
   const [buttonActive2, setButtonActive2] = useState(false);
 
-  const [filterChoice, setFilterChoice] = useState(Category[0].name);
+  const [filterChoice, setFilterChoice] = useState(CATEGORY[0].name);
   const [filterChoice2, setFilterChoice2] = useState(
     THEMEFILTERCATEGORY[0].name
   );
@@ -44,7 +44,7 @@ const ProductList = props => {
   };
 
   const filterChoose = index => {
-    setFilterChoice(Category[index].name);
+    setFilterChoice(CATEGORY[index].name);
     setButtonExpand(!buttonExpand);
     setButtonActive(false);
   };
