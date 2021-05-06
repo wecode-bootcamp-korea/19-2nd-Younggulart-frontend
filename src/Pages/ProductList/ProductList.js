@@ -106,7 +106,7 @@ const ProductList = () => {
           <ButtonName>{filterChoice2}</ButtonName>
           {buttonExpand2 && (
             <ButtonList
-              Category={THEMEFILTERCATEGORY}
+              category={THEMEFILTERCATEGORY}
               left="481px"
               filterChoose={filterChoose2}
             />
@@ -425,6 +425,7 @@ const PageBtnSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 150px;
 `;
 const MoreBtn = styled.button`
   height: 36px;

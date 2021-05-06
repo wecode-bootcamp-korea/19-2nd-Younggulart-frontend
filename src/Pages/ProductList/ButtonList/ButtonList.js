@@ -5,8 +5,8 @@ const ButtonList = props => {
   return (
     <ListButton left={props.left}>
       <ListCategory>-</ListCategory>
-      {props.Category &&
-        props.Category.map((elm, index) => {
+      {props.category &&
+        props.category.map((elm, index) => {
           return (
             <ListCategory
               onClick={() => {
