@@ -28,8 +28,6 @@ const Nav = () => {
       });
   }, []);
 
-  console.log(dataState);
-
   //작가
   // useEffect(() => {
   //   fetch('/data/data.json')

@@ -9,7 +9,6 @@ const DetailSlider = ({ art }) => {
   const [clickData, setClickData] = useState(0);
 
   const onClickData = index => {
-    console.log(index);
     setClickData(index);
   };
 

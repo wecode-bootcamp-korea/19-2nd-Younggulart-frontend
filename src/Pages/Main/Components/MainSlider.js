@@ -43,7 +43,7 @@ const MainSlider = () => {
 };
 
 const MainSlideBanner = styled.div`
-  margin: 100px auto 0;
+  margin: 40px auto 0;
   height: 800px;
 
   .slick-prev {

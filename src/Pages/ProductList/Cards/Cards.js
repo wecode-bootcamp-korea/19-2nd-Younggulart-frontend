@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router';
 
 const Cards = props => {
   // const { profile_image_url, name, art } = props.artistData[0];
-  // console.log(props.artistData);
   const [moreData, setMoreData] = useState(false);
 
   const history = useHistory();

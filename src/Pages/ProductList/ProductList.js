@@ -69,8 +69,6 @@ const ProductList = () => {
     moreArtist,
   ]);
 
-  // console.log(Boolean(artistData.RESULT.length));
-
   return (
     <>
       <Cover>
@@ -107,7 +105,7 @@ const ProductList = () => {
           {buttonExpand2 && (
             <ButtonList
               category={THEMEFILTERCATEGORY}
-              left="481px"
+              left="474px"
               filterChoose={filterChoose2}
             />
           )}
@@ -172,7 +170,7 @@ const ProductList = () => {
       {Boolean(artistData.RESULT) &&
         artistData.RESULT.map((elm, index) => {
           return (
-            <ArtList>
+            <ArtList key={index}>
               <Cards
                 artistData={elm}
                 backColor="#efefef"
