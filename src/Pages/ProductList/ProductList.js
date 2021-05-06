@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Cards from './Cards/Cards';
 import SlideFliter from './SlideFliter/SlideFliter';
 import ButtonList from './ButtonList/ButtonList';
 import FilterIcon from './FilterIcon/FilterIcon';
-import { ConsoleWriter } from 'istanbul-lib-report';
 import { API } from '../../../src/config';
 
-const ProductList = props => {
+const ProductList = () => {
   const [buttonActive, setButtonActive] = useState(false);
   const [artistData, setArtistData] = useState([]);
   const [buttonActive2, setButtonActive2] = useState(false);
