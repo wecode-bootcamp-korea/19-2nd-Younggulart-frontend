@@ -162,8 +162,7 @@ const FramingBack = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 const FramingAll = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   width: 1200px;
   background: #fff;
 `;
@@ -221,9 +220,8 @@ const Thickness = styled.div`
 `;
 
 const SliderTrack = styled.div`
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   position: relative;
-  display: flex;
-  justify-content: space-between;
   width: 280px;
   height: 5px;
   margin: 0 auto;

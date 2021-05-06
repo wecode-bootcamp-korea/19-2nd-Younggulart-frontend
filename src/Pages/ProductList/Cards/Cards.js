@@ -64,26 +64,24 @@ const Layer = styled.div`
 `;
 
 const Artist = styled.span`
+  ${({ theme }) => theme.flexSet('center', 'center')}
   position: absolute;
-  display: flex;
   left: 0;
   top: 0;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
   text-align: center;
   height: 100%;
   width: 300px;
 `;
 
 const ArtistImg = styled.img`
+  object-fit: cover;
   width: 150px;
   height: 150px;
-  border-radius: 120px;
+  border-radius: 50%;
   overflow: hidden;
   display: block;
-  margin: 0 auto;
-  padding-bottom: 10px;
+  margin: 1rem auto;
 `;
 
 const ArtiseName = styled.h1``;
@@ -134,7 +132,7 @@ const WorkContents = styled.h1`
   margin-top: 10px;
 `;
 
-const WorkSorce = styled.h2`
+const WorkSorce = styled.p`
   color: #000;
   font-weight: 500;
   font-size: 12px;
@@ -145,7 +143,7 @@ const MoreBtn = styled.button`
   width: 120px;
   height: 60px;
   border-radius: 50px;
-  font-size: 17px;
+  font-size: 1rem;
   bottom: 150px;
   text-transform: uppercase;
   right: 10px;

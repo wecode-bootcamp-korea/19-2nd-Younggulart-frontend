@@ -1,4 +1,4 @@
-# Team WhiteSpace
+# Team Younggulart
 
 ## 🖥 프로젝트 소개
 
@@ -10,7 +10,6 @@ https://www.singulart.com/ko/
 2021.04.26 ~ 2021.05.06
 
 ## 🎥 프로젝트 시연영상
-
 
 ## 👩🏻‍💻🧑🏻‍💻 프로젝트 참가자 (Front & Back)
 
@@ -27,9 +26,12 @@ https://www.singulart.com/ko/
 - FrontEnd
 
   ![HTML/CSS](https://img.shields.io/badge/-HTML/CSS-E44D26)  
-  ![SASS](https://img.shields.io/badge/-SASS-ff69b4)  
+  ![StyledComponent](https://img.shields.io/badge/-StyledComponent-ff69b4)  
   ![JavaScript(ES6+)](<https://img.shields.io/badge/-JavaScript(ES6%2B)-F0DB4D>)  
-  ![React](https://img.shields.io/badge/-React-blue)
+  ![React](https://img.shields.io/badge/-React-blue)  
+  ![EC2](https://img.shields.io/badge/-EC2-green)  
+  ![S3](https://img.shields.io/badge/-S3-DA5041)  
+  ![GithubAction](https://img.shields.io/badge/-GithubAction-333333)
 
 - BackEnd
 
@@ -39,15 +41,14 @@ https://www.singulart.com/ko/
   ![Bcrypt](https://img.shields.io/badge/-Bcrypt-2A334C)  
   ![PyJWT](https://img.shields.io/badge/-PyJWT-black)  
   ![MySQL](https://img.shields.io/badge/-MySQL-DD8A00)  
-  ![AqeuryTool](https://img.shields.io/badge/-AqeuryTool-6A9CA7)  
-  ![S3](https://img.shields.io/badge/-S3-DA5041)
+  ![AqeuryTool](https://img.shields.io/badge/-AqeuryTool-6A9CA7)
 
 - 협업 도구
 
   ![Slack](https://img.shields.io/badge/-Slack-D91D57)  
   ![Git](https://img.shields.io/badge/-Git-black)  
   ![Trello](https://img.shields.io/badge/-Trello-036AA7) <br>
-  ![Notion](https://img.shields.io/badge/-Notion-000000)  
+  ![Notion](https://img.shields.io/badge/-Notion-000000)
 
 ---
 
@@ -55,11 +56,9 @@ https://www.singulart.com/ko/
 
 ## 🌱 Frontend
 
-
 ---
 
 ## 🌱 Backend
-
 
 ---
 
@@ -68,12 +67,12 @@ https://www.singulart.com/ko/
 ## 🔜 Frontend
 
 [김남선]  
-[이명진]  <br> 
+[이명진]  
 [황재원]
 
 ## 🔙 Backend
 
-[문희원]  <br>
+[문희원]  
 [서득영]
 
 ---

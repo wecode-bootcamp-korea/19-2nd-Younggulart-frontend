@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import Menu from './Menu/Menu';
 import Login from '../../Pages/Login/Login';
+import styled from 'styled-components';
 import { LOGO } from '../../config';
 import { API } from '../../config';
 
@@ -143,6 +143,7 @@ const Logo = styled.span`
 
   img {
     width: 300px;
+    margin-left: 1rem;
   }
 `;
 

@@ -25,8 +25,7 @@ const Artist = ({ artist }) => {
 };
 
 const ArtistAll = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
 `;
 
 const ArtistOne = styled.div`

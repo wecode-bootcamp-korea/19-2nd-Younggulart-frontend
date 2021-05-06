@@ -29,6 +29,7 @@ const ProductList = () => {
   const [moreArtist, setMoreArtist] = useState(1);
 
   const handleMoreArtist = () => {
+    window.scrollTo({ top: 0 });
     setMoreArtist(moreArtist + 1);
   };
 
@@ -208,10 +209,8 @@ const ArtList = styled.div`
 `;
 
 const Cover = styled.div`
+  ${({ theme }) => theme.flexSet('center', 'center')}
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 230px;
   background-image: url('https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/banner_desk_search.519633a3.jpg');
@@ -238,9 +237,7 @@ const Header = styled.span`
 `;
 
 const FilterPrimary = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-self: center;
+  ${({ theme }) => theme.flexSet('space-evenly', 'center')}
   position: relative;
   width: 100%;
   height: 110px;
@@ -283,7 +280,7 @@ const StyleFilter = styled.button`
   width: 300px;
   height: 80px;
   &:hover {
-    background-color: ${props => props.theme.bgColor};
+    background-color: ${({ theme }) => theme.bgColor};
   }
 `;
 
@@ -300,9 +297,11 @@ const MaterialFilter = styled.button`
   border-radius: 10px;
   width: 300px;
   height: 80px;
+
   &:hover {
-    background-color: ${props => props.theme.bgColor};
+    background-color: ${({ theme }) => theme.bgColor};
   }
+
   &:active {
   }
 `;
@@ -361,28 +360,24 @@ const FiltersSorting = styled.div`
 `;
 
 const Container = styled.div`
-  display: flex;
-  justify-content: center;
+  ${({ theme }) => theme.flexSet('center', 'stretch')}
   width: 80%;
   margin: 0 auto;
 `;
 
 const FilterLeft = styled.span`
-  display: flex;
-  justify-content: left;
-  align-self: center;
+  ${({ theme }) => theme.flexSet('left', 'center')}
   width: 40%;
 `;
 
 const FilterRight = styled.span`
-  display: flex;
-  justify-content: flex-end;
+  ${({ theme }) => theme.flexSet('flex-end', 'stretch')}
   margin-right: 0 10% 10% 0;
   width: 40%;
 `;
 
 const SubscribeBox = styled.button`
-  background-color: ${props => props.theme.black};
+  background-color: ${({ theme }) => theme.black};
   color: white;
   border-radius: 50px;
   font-size: 17px;
@@ -420,18 +415,15 @@ const DropDown = styled.button`
   margin: 0px 10px 20px;
 `;
 const PageBtnSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${({ theme }) => theme.flexSet('center', 'center')}
   height: 150px;
 `;
 const MoreBtn = styled.button`
-  height: 36px;
-  background-color: powderblue;
-  border: 0.5 solid #dedede;
+  background-color: ${({ theme }) => theme.primaryColor};
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  color: white;
 `;
 
 export default ProductList;

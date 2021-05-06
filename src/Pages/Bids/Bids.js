@@ -33,7 +33,7 @@ const Bids = () => {
           setBidsLists(bidsData.auctions.slice(0, itemCount));
         });
       setIsLoading(false);
-    }, 500);
+    }, 700);
   };
 
   useEffect(() => {

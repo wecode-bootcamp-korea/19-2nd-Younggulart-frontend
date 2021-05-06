@@ -31,7 +31,7 @@ const Login = () => {
             if (res.ACCESS_TOKEN) {
               history.push('/');
               setIsLogined(true);
-              alert('로그인 성공!');
+              alert('로그인!');
             } else {
               alert('로그인 실패!');
             }
@@ -45,7 +45,7 @@ const Login = () => {
 
   const kakaoLogout = () => {
     Kakao.Auth.logout(() => {
-      alert('로그아웃 되었습니다!');
+      alert('로그아웃!');
     });
     localStorage.clear();
     setIsLogined(false);

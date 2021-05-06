@@ -14,9 +14,7 @@ const FilterIcon = props => {
   );
 };
 const IconStyle = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${({ theme }) => theme.flexSet('center', 'center')}
   background-color: white;
   width: 42px;
   height: 32px;
@@ -31,10 +29,8 @@ const IconStyle = css`
   }
 `;
 const Icon = styled.ul`
+  ${({ theme }) => theme.flexSet('center', 'center')}
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-self: center;
   left: ${props => props.left};
   width: 130px;
   height: 38px;
