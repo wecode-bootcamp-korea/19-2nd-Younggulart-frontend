@@ -48,10 +48,9 @@ const Container = styled.section`
   background-color: black;
 `;
 const FooterManu = styled.section`
+  ${({ theme }) => theme.flexSet('space-evenly', 'stretch')}
   margin: 0 auto;
   padding: 2rem 0;
-  display: flex;
-  justify-content: space-evenly;
   width: 100%;
 `;
 
@@ -81,9 +80,8 @@ const InfoList = styled.li`
 `;
 
 const Baseline = styled.section`
-  display: flex;
+  ${({ theme }) => theme.flexSet('flex-end', 'stretch')}
   margin-left: 35rem;
-  justify-content: flex-end;
   width: 100vh;
 
   img {

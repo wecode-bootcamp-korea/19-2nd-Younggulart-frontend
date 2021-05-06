@@ -19,8 +19,7 @@ const DetailArtSlider = ({ image, clickData }) => {
 };
 
 const SliderAll = styled.div`
-  display: flex;
-  justify-content: space-around;
+  ${({ theme }) => theme.flexSet('space-around', 'stretch')}
   margin: 0 auto;
   width: 40%;
 

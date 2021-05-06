@@ -24,10 +24,16 @@ const BidsOffer = ({ handleCloseModal }) => {
       headers: {
         Authorization: localStorage.getItem('access_token'),
       },
+      body: JSON.stringify({
+        offered_price: Number(biddingPrice),
+      }),
     })
       .then(res => res.json())
       .then(res => {
-        console.log(res);
+        if (res.MESSAGE === 'SUCCESS') {
+          alert('입찰에 성공했습니다. 카카오톡 메세지를 확인해주세요.');
+          setBiddingPrice('');
+        }
       });
   };
 
@@ -159,6 +165,7 @@ const AddBtn = styled.div`
   &:hover {
     transition: 0.5s;
     background: #000;
+    cursor: pointer;
   }
 `;
 export default BidsOffer;

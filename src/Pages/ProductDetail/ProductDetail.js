@@ -34,8 +34,7 @@ const ProductDetail = () => {
 };
 
 const ProductDetailAll = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   padding-top: 60px;
 `;
 export default ProductDetail;

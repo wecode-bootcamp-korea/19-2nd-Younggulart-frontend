@@ -75,6 +75,7 @@ const Button = styled.div`
     transition: 0.5s;
     color: #fff;
     background-color: ${({ theme }) => theme.primaryColor};
+    cursor: pointer;
   }
 `;
 

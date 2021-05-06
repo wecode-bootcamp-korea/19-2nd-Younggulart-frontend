@@ -58,6 +58,7 @@ const BiddingBtn = styled.div`
   &:hover {
     transition: 0.5s;
     background: #000;
+    cursor: pointer;
   }
 `;
 

@@ -50,8 +50,7 @@ const Artwork = ({ work }) => {
 };
 
 const ArtworkAll = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   padding-top: 20px;
 
   img {
@@ -87,8 +86,7 @@ const ArtistName = styled.div`
 `;
 
 const ListTop = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   margin: 25px 0;
 `;
 

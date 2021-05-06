@@ -75,8 +75,7 @@ const TitleL = styled.h1`
 `;
 
 const ArtInfo = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   margin: 0 auto;
   width: 1450px;
 `;

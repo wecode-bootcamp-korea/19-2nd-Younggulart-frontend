@@ -111,8 +111,7 @@ const Title = styled.div`
 `;
 
 const Cards = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.flexSet('space-between', 'stretch')}
   width: 710px;
 `;
 
@@ -182,6 +181,7 @@ const Price = styled.div`
     transition: all ease 1s;
     border: 3px solid ${props => props.theme.primaryColor};
     background-color: ${props => props.theme.primaryColor};
+    cursor: pointer;
   }
 `;
 
