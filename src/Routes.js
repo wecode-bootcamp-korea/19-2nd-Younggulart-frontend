@@ -5,17 +5,17 @@ import Main from './Pages/Main/Main';
 import Bids from './Pages/Bids/Bids';
 import Footer from './Components/Footer/Footer';
 import ProductList from './Pages/ProductList/ProductList';
-import ProductDetail from './Pages/';
+import ProductDetail from './Pages/ProductDetail/ProductDetail';
 
 const Routes = () => {
   return (
     <Router>
+      <Nav />
       <Switch>
-        <Nav />
         <Route exact path="/bids" component={Bids} />
         <Route exact path="/productlist" component={ProductList} />
         <Route exact path="/" component={Main} />
-        <Route exact path="/productList/:id" component={ProductDetail} />
+        <Route exact path="/productlist/:id" component={ProductDetail} />
         {/* <Route exact path="/signup" component={Signup} /> */}
         {/* <Route exact path="/cart" component={Cart} /> */}
       </Switch>

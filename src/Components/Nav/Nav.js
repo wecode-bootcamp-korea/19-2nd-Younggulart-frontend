@@ -21,7 +21,7 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    fetch(`{API}/nav`)
+    fetch(`${API}/nav`)
       .then(res => res.json())
       .then(data => {
         setDataState(data.categories[0]);

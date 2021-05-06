@@ -3,13 +3,17 @@ import { API } from '../../config';
 import styled from 'styled-components';
 import DetailInfo from './DetailInfo/DetailInfo';
 import Purchase from './Purchase/Purchase';
+import { useHistory } from 'react-router-dom';
 
 const ProductDetail = () => {
   const [detailData, setDetailData] = useState({});
+  const history = useHistory();
+
+  console.log(history.location.pathname);
 
   useEffect(() => {
     fetch('/data/ProductDetail.json')
-      // fetch(`${API}/arts/200`)
+      // fetch(`${API}/arts/${}`)
       .then(res => res.json())
       .then(data => {
         setDetailData(data);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BIDS_BACKGROUND } from '../../config';
+import { BIDS_API, BIDS_BACKGROUND } from '../../config';
 import DatePicker from 'react-horizontal-datepicker';
 import ScheduleList from './Components/ScheduleList';
 import Loading from '../../Components/Loading/Loading';
@@ -25,8 +25,8 @@ const Bids = () => {
   const fetchBidsLists = () => {
     setIsLoading(true);
     setTimeout(() => {
-      // fetch(`${BIDS_API}${day}`)
-      fetch('data/bidsData.json')
+      fetch(`${BIDS_API}${day}`)
+        // fetch('data/bidsData.json')
         .then(res => res.json())
         .then(bidsData => {
           setIsLoading(!(bidsData.auctions.length === itemCount));
