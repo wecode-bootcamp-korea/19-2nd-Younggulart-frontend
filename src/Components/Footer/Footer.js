@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <Container>
       <FooterManu>
-<<<<<<< HEAD
         <LogoImg src={LOGO.image} alt="logoImage" />
         {FOOTER_CONTENTS.map((content, index) => {
           const { title, sub } = content;
@@ -21,33 +20,6 @@ const Footer = () => {
             </Information>
           );
         })}
-=======
-        <LogoImg
-          src="https://d17h7hjnfv5s46.cloudfront.net/assets/build/images/logos/logo-colors-square-black-bg.9f4d2cd2.svg"
-          alt="로고"
-        />
-        <Information>
-          <InfoTitle>고객센터</InfoTitle>
-          <InfoList>
-            {INFO.map((data, idx) => {
-              return <div key={idx}>{data.name}</div>;
-            })}
-          </InfoList>
-        </Information>
-        <Information>
-          <InfoTitle>회사소개</InfoTitle>
-          <InfoList>
-            {CP.map((elm, index) => {
-              return <div key={index}>{elm}</div>;
-            })}
-          </InfoList>
-        </Information>
-        <Information>
-          <InfoTitle>작가신가요?</InfoTitle>
-          <InfoList>제휴 작가 등록 신청</InfoList>
-          <InfoList>내 계정 (younggleart작가 전용)</InfoList>
-        </Information>
->>>>>>> fb9e750... 메인 수정
       </FooterManu>
       <Baseline>
         <img src={LOGO.base} alt="baseImage" />
@@ -102,14 +74,9 @@ const InfoTitle = styled.li`
 
 const InfoList = styled.li`
   cursor: pointer;
-<<<<<<< HEAD
 
   p {
     margin: 1rem 0;
-=======
-  div {
-    margin: 15px;
->>>>>>> fb9e750... 메인 수정
   }
 `;
 
