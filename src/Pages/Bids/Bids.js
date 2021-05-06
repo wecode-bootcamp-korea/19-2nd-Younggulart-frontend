@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BIDS_API, BIDS_BACKGROUND } from '../../config';
+import { BIDS_BACKGROUND } from '../../config';
 import DatePicker from 'react-horizontal-datepicker';
 import ScheduleList from './Components/ScheduleList';
 import Loading from '../../Components/Loading/Loading';
@@ -42,6 +42,7 @@ const Bids = () => {
 
   useEffect(() => {
     fetchBidsLists();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [day]);
 
   useEffect(() => {
@@ -51,6 +52,7 @@ const Bids = () => {
       observer.observe(target);
     }
     return () => observer && observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [target]);
 
   const callback = ([entry], observer) => {

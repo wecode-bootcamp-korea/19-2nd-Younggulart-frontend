@@ -27,7 +27,7 @@ const ScheduleList = ({ bidsList, id }) => {
     if (isShow) {
       window.scrollTo(0, mapWrap.current.scrollHeight * (id * 2));
     }
-  }, [isShow]);
+  }, [isShow, id]);
 
   return (
     <>

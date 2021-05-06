@@ -7,6 +7,7 @@ const Map = ({ x, y }) => {
 
   useEffect(() => {
     mapscript();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const mapscript = () => {

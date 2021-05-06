@@ -5,10 +5,11 @@ import Menu from './Menu/Menu';
 import Login from '../../Pages/Login/Login';
 import { LOGO } from '../../config';
 
-const Nav = props => {
+const Nav = () => {
   const [menuState, setMenuState] = useState(false);
   const [colorState, setColorState] = useState(false);
   const [dataState, setDataState] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [artistDataState, setArtistData] = useState([]);
   const [inputTag, setInputTag] = useState(false);
 
@@ -23,6 +24,13 @@ const Nav = props => {
       .then(res => res.json())
       .then(data => {
         setDataState(data.categories[0]);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch('/data/data.json')
+      .then(res => res.json())
+      .then(data => {
         setArtistData(data.categories[1]);
       });
   }, []);
