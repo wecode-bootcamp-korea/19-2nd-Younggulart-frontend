@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
 import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
-import { flexbox } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,6 +31,7 @@ ValueLabelComponent.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
+// eslint-disable-next-line no-unused-vars
 const marks = [
   {
     value: 0,
@@ -132,12 +132,11 @@ export default function CustomizedSlider(props) {
 
   // const [markMin, setMarkMin] = useState(0);
   // const [markMax, setMarkMax] = useState(100);
+  // eslint-disable-next-line no-unused-vars
   const [arrs, setArrs] = useState([]);
 
   function valueLabelFormat(value) {
-    // console.log(value, 'value');
     // setArrs(value);
-    // console.log(arrs, 'arrs');
     // return marks.findIndex(mark => mark.value === value) + 1;
   }
   const [value, setValue] = React.useState([0, props.max]);

@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Menu = props => {
   const [change, setchange] = useState(false);
   const [sub, setSub] = useState([]);
   const [img, setImg] = useState([]);
+  const history = useHistory();
 
   const ishovered = index => {
     setchange(!change);
     setSub(props.dataState[index].themes);
     setImg(props.dataState[index]);
+  };
+
+  const goToList = () => {
+    history.push('/productlist');
   };
 
   return (
@@ -20,6 +26,7 @@ const Menu = props => {
             onMouseEnter={() => {
               ishovered(index);
             }}
+            onClick={goToList}
             key={index}
           >
             {elm.media_name}

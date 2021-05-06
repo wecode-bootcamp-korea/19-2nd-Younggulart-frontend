@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
+import { API } from '../../../config';
 
 const BidsOffer = ({ handleCloseModal }) => {
   const [showMessageBox, setShowMessageBox] = useState(false);
+  const [biddingPrice, setBiddingPrice] = useState('');
+  const history = useHistory();
+
+  const productId = history.location.pathname.split('/')[2];
 
   const showModal = () => {
     setShowMessageBox(!showMessageBox);
+  };
+
+  const handlePrice = e => {
+    setBiddingPrice(e.target.value);
+  };
+
+  const bidding = () => {
+    fetch(`${API}/biddings/${productId}`, {
+      method: 'POST',
+      headers: {
+        Authorization: localStorage.getItem('access_token'),
+      },
+    })
+      .then(res => res.json())
+      .then(res => {
+        console.log(res);
+      });
   };
 
   return (
@@ -14,9 +37,15 @@ const BidsOffer = ({ handleCloseModal }) => {
       <h2>Make an offer on this artwork</h2>
       <PriceField>
         ₩
-        <input type="number" min="1000000" step="1" />
+        <input
+          type="number"
+          min="1000000"
+          step="1000"
+          value={biddingPrice}
+          onChange={e => handlePrice(e)}
+        />
       </PriceField>
-      <input type="text" placeholder="이메일 주소" />
+      {/* <input type="text" placeholder="이메일 주소" /> */}
       <Add onClick={showModal}>ADD A MESSAGE</Add>
 
       {showMessageBox && (
@@ -27,7 +56,7 @@ const BidsOffer = ({ handleCloseModal }) => {
         />
       )}
 
-      <AddBtn>문의사항 보내기</AddBtn>
+      <AddBtn onClick={bidding}>입찰하기</AddBtn>
     </Offer>
   );
 };

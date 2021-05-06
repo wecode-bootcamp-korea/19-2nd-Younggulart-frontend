@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../../config';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Framing = ({ handleCloseModal }) => {
   const [materialData, setMaterialData] = useState([]);
@@ -10,16 +10,16 @@ const Framing = ({ handleCloseModal }) => {
   const [selectedFrame, setSelectedFrame] = useState(null);
 
   useEffect(() => {
-    fetch('/data/FramData.json')
-      // fetch(`${API}/frame/30`)
+    // fetch('/data/FramData.json')
+    fetch(`${API}/frame/30`)
       .then(res => res.json())
       .then(data => {
         setMaterialData(data.materials);
         setSizeData(data.sizes);
       });
 
-    fetch('/data/ProductDetail.json')
-      // fetch(`${API}/arts/200`)
+    // fetch('/data/ProductDetail.json')
+    fetch(`${API}/arts/200`)
       .then(res => res.json())
       .then(data => {
         setDetailData(data.art);
@@ -158,7 +158,7 @@ const FramingBack = styled.div`
   bottom: 0;
   left: 0;
   padding-top: 2rem;
-  z-index: 15;
+  z-index: 1500;
   background-color: rgba(0, 0, 0, 0.5);
 `;
 const FramingAll = styled.div`

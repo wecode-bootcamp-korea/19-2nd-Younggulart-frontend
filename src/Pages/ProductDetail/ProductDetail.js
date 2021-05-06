@@ -9,15 +9,16 @@ const ProductDetail = () => {
   const [detailData, setDetailData] = useState({});
   const history = useHistory();
 
-  console.log(history.location.pathname);
+  const productId = history.location.pathname.split('/')[2];
 
   useEffect(() => {
-    fetch('/data/ProductDetail.json')
-      // fetch(`${API}/arts/${}`)
+    // fetch('/data/ProductDetail.json')
+    fetch(`${API}/arts/${productId}`)
       .then(res => res.json())
       .then(data => {
         setDetailData(data);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -35,6 +36,6 @@ const ProductDetail = () => {
 const ProductDetailAll = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 140px;
+  padding-top: 60px;
 `;
 export default ProductDetail;

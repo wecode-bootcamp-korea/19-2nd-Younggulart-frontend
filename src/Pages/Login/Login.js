@@ -38,14 +38,14 @@ const Login = () => {
           });
       },
       fail: function (err) {
-        console.log('kakao login 오류', err);
+        // console.log('kakao login 오류', err);
       },
     });
   };
 
   const kakaoLogout = () => {
     Kakao.Auth.logout(() => {
-      console.log('Kakao logout');
+      alert('로그아웃 되었습니다!');
     });
     localStorage.clear();
     setIsLogined(false);
