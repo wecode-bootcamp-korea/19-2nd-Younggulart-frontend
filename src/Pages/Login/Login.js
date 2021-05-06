@@ -29,9 +29,9 @@ const Login = () => {
           .then(res => res.json())
           .then(res => {
             if (res.ACCESS_TOKEN) {
-              alert('로그인 성공!');
               history.push('/');
               setIsLogined(true);
+              alert('로그인 성공!');
             } else {
               alert('로그인 실패!');
             }
@@ -40,12 +40,6 @@ const Login = () => {
       fail: function (err) {
         console.log('kakao login 오류', err);
       },
-    });
-  };
-
-  const kakaoOnClick = () => {
-    Kakao.Auth.getStatusInfo(res => {
-      res.status === 'connected' ? history.push('/') : kakaoLogin();
     });
   };
 
@@ -80,7 +74,7 @@ const Login = () => {
           }}
           header="소셜 로그인"
         >
-          <KakaoBtn onClick={kakaoOnClick} src={KAKAO.loginBtn}></KakaoBtn>
+          <KakaoBtn onClick={kakaoLogin} src={KAKAO.loginBtn}></KakaoBtn>
           <FindPassword href={KAKAO.findPassword} target="_blank">
             비밀번호를 잊으셨나요?
           </FindPassword>
