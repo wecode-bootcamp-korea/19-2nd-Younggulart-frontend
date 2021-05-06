@@ -24,10 +24,13 @@ const Nav = () => {
     fetch(`${API}/nav`)
       .then(res => res.json())
       .then(data => {
-        setDataState(data.categories[0]);
+        setDataState(data.arts);
       });
   }, []);
 
+  console.log(dataState);
+
+  //작가
   // useEffect(() => {
   //   fetch('/data/data.json')
   //     .then(res => res.json())
@@ -37,58 +40,61 @@ const Nav = () => {
   // }, []);
 
   return (
-    <NavbarFix>
-      <HeaderInfo>WORLDWIDE SHIPPING - FREE RETURNS</HeaderInfo>
-      <Navbar>
-        <Logo>
-          <Link to="/">
-            <img src={LOGO.imageText} alt="logoImage" />
-          </Link>
-        </Logo>
-        <MainNav>
-          <li
-            onMouseEnter={() => setMenuState(true)}
-            onMouseLeave={() => setMenuState(false)}
-          >
-            작품
-            {menuState && (
-              <MenuPopUp>
-                <Menu
-                  findIndex={index => findIndex(index)}
-                  dataState={dataState}
-                />
-              </MenuPopUp>
+    <>
+      <NavbarFix>
+        <HeaderInfo>WORLDWIDE SHIPPING - FREE RETURNS</HeaderInfo>
+        <Navbar>
+          <Logo>
+            <Link to="/">
+              <img src={LOGO.imageText} alt="logoImage" />
+            </Link>
+          </Logo>
+          <MainNav>
+            <li
+              onMouseEnter={() => setMenuState(true)}
+              onMouseLeave={() => setMenuState(false)}
+            >
+              작품
+              {menuState && (
+                <MenuPopUp>
+                  <Menu
+                    findIndex={index => findIndex(index)}
+                    dataState={dataState}
+                  />
+                </MenuPopUp>
+              )}
+            </li>
+            <li>작가</li>
+            <li>컬렉션</li>
+            <BidsLi>
+              <Link to="/bids">경매일정</Link>
+            </BidsLi>
+          </MainNav>
+          <UserTap>
+            <li className="languages">KO</li>
+            <Search onClick={() => setInputTag(!inputTag)}>
+              <i className="xi-search"></i>
+            </Search>
+            {inputTag && (
+              <Input
+                type="text"
+                placeholder="    여기에 검색어를 입력해주세요."
+              />
             )}
-          </li>
-          <li>작가</li>
-          <li>컬렉션</li>
-          <BidsLi>
-            <Link to="/bids">경매일정</Link>
-          </BidsLi>
-        </MainNav>
-        <UserTap>
-          <li className="languages">KO</li>
-          <Search onClick={() => setInputTag(!inputTag)}>
-            <i className="xi-search"></i>
-          </Search>
-          {inputTag && (
-            <Input
-              type="text"
-              placeholder="    여기에 검색어를 입력해주세요."
-            />
-          )}
-          <LoginLi>
-            <Login />
-          </LoginLi>
-          <li>
-            <i className="xi-heart-o" />
-          </li>
-          <li>
-            <i className="xi-basket" />
-          </li>
-        </UserTap>
-      </Navbar>
-    </NavbarFix>
+            <LoginLi>
+              <Login />
+            </LoginLi>
+            <li>
+              <i className="xi-heart-o" />
+            </li>
+            <li>
+              <i className="xi-basket" />
+            </li>
+          </UserTap>
+        </Navbar>
+      </NavbarFix>
+      <PaddingZone></PaddingZone>
+    </>
   );
 };
 
@@ -96,6 +102,7 @@ const NavbarFix = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
+  margin-bottom: 500px;
 `;
 
 const MenuPopUp = styled.div`
@@ -200,6 +207,11 @@ const Input = styled.input`
   border-radius: 1.5rem;
   background-color: #343434;
   color: white;
+`;
+
+const PaddingZone = styled.div`
+  width: 100%;
+  height: 100px;
 `;
 
 export default Nav;
