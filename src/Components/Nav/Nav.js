@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Menu from './Menu/Menu';
 import Login from '../../Pages/Login/Login';
 import { LOGO } from '../../config';
+import { API } from '../../config';
 
 const Nav = () => {
   const [menuState, setMenuState] = useState(false);
@@ -20,20 +21,20 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    fetch('/data/data.json')
+    fetch(`{API}/nav`)
       .then(res => res.json())
       .then(data => {
         setDataState(data.categories[0]);
       });
   }, []);
 
-  useEffect(() => {
-    fetch('/data/data.json')
-      .then(res => res.json())
-      .then(data => {
-        setArtistData(data.categories[1]);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch('/data/data.json')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       setArtistData(data.categories[1]);
+  //     });
+  // }, []);
 
   return (
     <NavbarFix>
