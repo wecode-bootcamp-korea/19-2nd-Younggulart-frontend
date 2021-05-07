@@ -8,7 +8,9 @@ const Login = () => {
   const { Kakao } = window;
   const history = useHistory();
   const [modalOpen, setModalOpen] = useState(false);
-  const [isLogined, setIsLogined] = useState(false);
+  const [isLogined, setIsLogined] = useState(
+    localStorage.getItem('access_token')
+  );
 
   const handleModal = status => {
     setModalOpen(status);
