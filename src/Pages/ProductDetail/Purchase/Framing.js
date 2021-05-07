@@ -19,7 +19,7 @@ const Framing = ({ handleCloseModal }) => {
       });
 
     // fetch('/data/ProductDetail.json')
-    fetch(`${API}/arts/200`)
+    fetch(`${API}/arts/93`)
       .then(res => res.json())
       .then(data => {
         setDetailData(data.art);
