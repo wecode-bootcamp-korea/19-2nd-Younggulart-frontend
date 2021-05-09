@@ -3,7 +3,7 @@
 ## 🖥 프로젝트 소개
 
 React를 사용한 'Singulart' 웹사이트 클론  
-https://www.singulart.com/ko/
+http://3.35.82.99/
 
 ## 📅 프로젝트 기간
 
@@ -88,7 +88,7 @@ https://vimeo.com/546376548
 
 ## 🔜 Frontend
 
-[김남선]  
+[김남선](https://velog.io/@nsunny0908/Singulart-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D)  
 [이명진]  
 [황재원]
 
